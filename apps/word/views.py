@@ -22,6 +22,6 @@ def index(request):
 
 def reset(request):
 
-    request.session.clear()
+    request.session.flush()
 
     return redirect('/')
